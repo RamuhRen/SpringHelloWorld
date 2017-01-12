@@ -18,5 +18,9 @@ public class Main {
         ApplicationContext test = new ClassPathXmlApplicationContext("appConfig.xml");
         HelloWorld helloWorld = (HelloWorld) test.getBean("helloWorld");
         helloWorld.printName();
+
+        ApplicationContext text1 = new ClassPathXmlApplicationContext("appConfig.xml");
+        car testCar = (car) text1.getBean("testcar");
+        System.out.println(testCar);
     }
 }

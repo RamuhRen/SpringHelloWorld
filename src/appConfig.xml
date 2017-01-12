@@ -10,4 +10,8 @@
     <bean id ="helloWorld" class ="com.ecnu.spring.beans.HelloWorld">
         <property name="name" value="Spring"></property>
     </bean>
+    <bean id ="testcar" class="com.ecnu.spring.beans.car">
+        <constructor-arg value="audi"></constructor-arg>
+        <constructor-arg value="shanghai"></constructor-arg>
+    </bean>
 </beans>
